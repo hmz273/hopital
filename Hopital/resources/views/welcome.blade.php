@@ -52,15 +52,15 @@
                     It manages the smooth healthcare performance along with administrative, medical, 
                     legal and financial control.
                 </p>
-                <a class="text-light" href="/about">read more</a>
+                <a class="text-light" href="#">read more</a>
             </div>
         </div>
     </div>
     <div class="row space-rows" id="about">
         {{-- CARD 1 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 18rem; border:none;">
-                <img class="card-img-top img-fluid" src="assets/img/2.png">
+            <div class="card" style="width: 18rem; border:none;  background:none;">
+                <img class="card-img-top img-fluid" src="assets/img/1.png">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -71,7 +71,7 @@
         
         {{-- CARD 2 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 18rem;  border:none;">
+            <div class="card" style="width: 18rem;  border:none; background:none;">
                 <img class="card-img-top img-fluid" src="assets/img/2.png">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,8 +81,8 @@
 
         {{-- CARD 3 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 18rem;  border:none;">
-                <img class="card-img-top img-fluid" src="assets/img/2.png">
+            <div class="card" style="width: 14rem;  border:none; background:none;">
+                <img class="card-img-top img-fluid" src="assets/img/3.png">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>

@@ -13,5 +13,8 @@ class HomeController extends Controller
         if($role=='1'){
             return view('patient.dbd');
         }
+        else{
+            return view('admin.dbd');
+        }
     }
 }
