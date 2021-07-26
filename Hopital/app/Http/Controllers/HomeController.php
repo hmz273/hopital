@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function index(){
         $role=Auth::user()->role;
 
-        if($role=='0'){
+        if($role=='1'){
             return view('patient.dbd');
         }
     }

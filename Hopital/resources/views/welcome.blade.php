@@ -29,16 +29,16 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="/">Dashboard</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="/contact">About Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#">Contact Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#">Sign In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#dashboard">Dashboard</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#about">About Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#">Sign In</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="x_001_laptop_main_wrap">
+    <div class="x_001_laptop_main_wrap" id="dashboard">
         <div class="row">
             <div class="col-md-7">
                 <div class="x_001_laptop_inner_wrap">
@@ -52,46 +52,39 @@
                     It manages the smooth healthcare performance along with administrative, medical, 
                     legal and financial control.
                 </p>
-                <a href="/about">read more</a>
+                <a class="text-light" href="/about">read more</a>
             </div>
         </div>
     </div>
-    <div class="row space-rows">
+    <div class="row space-rows" id="about">
         {{-- CARD 1 --}}
-        <div class="col"> 
-            <div class="card cards-shadown cards-hover" data-aos="flip-left" data-aos-duration="950">
-                <div class="card-header flx">
-                    <img src='assets/img/1.png' style=" width: 55%;">
-                </div>
+        <div class="col-lg-4 col-md-6 col-sm-12"> 
+            <div class="card" style="width: 18rem; border:none;">
+                <img class="card-img-top img-fluid" src="assets/img/2.png">
                 <div class="card-body">
-                    <h4 class="card-text sub-text-color">QQQQQQQQQQ</h4>
-                    <p class="card-text cardbody-sub-text">Faux text Faux text Faux text Faux text Faux text Faux text Faux text </p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
+
+
         
         {{-- CARD 2 --}}
-        <div class="col">
-            <div class="card cards-shadown cards-hover" data-aos="slide-right" data-aos-duration="950">
-                <div class="card-header flx">
-                    <img src='assets/img/2.png' style=" width: 55%;">
-                </div>
+        <div class="col-lg-4 col-md-6 col-sm-12"> 
+            <div class="card" style="width: 18rem;  border:none;">
+                <img class="card-img-top img-fluid" src="assets/img/2.png">
                 <div class="card-body">
-                    <h4 class="card-text sub-text-color">QQQQQQQQQQ</h4>
-                    <p class="card-text cardbody-sub-text">Faux text Faux text Faux text Faux text Faux text Faux text Faux text </p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
 
         {{-- CARD 3 --}}
-        <div class="col">
-            <div class="card cards-shadown cards-hover" data-aos="flip-up" data-aos-duration="950">
-                <div class="card-header cards-header-hover flx">
-                    <img src='assets/img/3.png' style=" width: 45%;">
-                </div>
+        <div class="col-lg-4 col-md-6 col-sm-12"> 
+            <div class="card" style="width: 18rem;  border:none;">
+                <img class="card-img-top img-fluid" src="assets/img/2.png">
                 <div class="card-body">
-                    <h4 class="card-text sub-text-color">QQQQQQQQQQ</h4>
-                    <p class="card-text cardbody-sub-text">Faux text Faux text Faux text Faux text Faux text Faux text Faux text </p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
@@ -104,7 +97,7 @@
                         <p class="m-0 text-center text-sm-right text-light">Faux Text Faux Text Faux Text Faux 
                             Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
                             Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text.&nbsp;<br></p>
+                            Text Faux Text Faux Text Faux Text Faux Text.<br></p>
                     </div>
                     <div class="col-12 col-sm-6 d-flex flex-row justify-content-center align-items-center intro-card-2 p-5">
                         <img class="howto-img" src="assets/img/lady-doctor.png">
