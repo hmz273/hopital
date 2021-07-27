@@ -22,3 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
+Route::get('admin/add/', 'App\Http\Controllers\admController@create')->name('admin.add');
+// Route::get('admin/add/', 'App\Http\Controllers\admController@store')->name('admin.add');
+Route::get('admin/edit/', 'App\Http\Controllers\admController@edit')->name('admin.edit');
+// Route::get('admin/edit/{id}', 'App\Http\Controllers\admController@update')->name('admin.update');
