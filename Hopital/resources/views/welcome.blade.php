@@ -24,14 +24,14 @@
 
 <body>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#18454D;color:#ffffff;">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm p-3 mb-5 rounded navigation-clean-button" style="height:80px;background-color:#18454D;color:#ffffff;">
             <div class="container-fluid"><a class="navbar-brand" href="/">HMS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#dashboard">Dashboard</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#about">About Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#contact">Contact Us</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#">Sign In</a></li>
                     </ul>
                 </div>
@@ -42,12 +42,14 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="x_001_laptop_inner_wrap">
-                    <img src="assets/img/undraw_doctors_hwty.svg" alt="EROR_101">
+                    <img data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" src="assets/img/undraw_doctors_hwty.svg" alt="EROR_101">
                 </div>
             </div>
             <div class="col-md-5">
-                <h1>Hospital Management System</h1>
-                <p>
+                <h1 data-aos="fade-left">Hospital Management System</h1>
+                <p data-aos="fade-left">
                     is an integrated software that handles different directions of clinic workflows. 
                     It manages the smooth healthcare performance along with administrative, medical, 
                     legal and financial control.
@@ -56,11 +58,12 @@
             </div>
         </div>
     </div>
-    <div class="row space-rows" id="about">
+    <br><br>
+    <div class="row space-rows mt-5" id="about">
         {{-- CARD 1 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 18rem; border:none;  background:none;">
-                <img class="card-img-top img-fluid" src="assets/img/1.png">
+            <div class="card hover-shadow text-center" style="width: 18rem; border:none;  background:none;">
+                <img class="card-img-top img-fluid ml-5" src="assets/img/1.png" style="width: 165px">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -71,8 +74,8 @@
         
         {{-- CARD 2 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 18rem;  border:none; background:none;">
-                <img class="card-img-top img-fluid" src="assets/img/2.png">
+            <div class="card text-center " style="width: 18rem;  border:none; background:none;">
+                <img class="card-img-top img-fluid ml-5" src="assets/img/2.png" style="width: 160px">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -81,8 +84,8 @@
 
         {{-- CARD 3 --}}
         <div class="col-lg-4 col-md-6 col-sm-12"> 
-            <div class="card" style="width: 14rem;  border:none; background:none;">
-                <img class="card-img-top img-fluid" src="assets/img/3.png">
+            <div class="card text-center" style="width: 17rem;  border:none; background:none;">
+                <img class="card-img-top img-fluid ml-5" src="assets/img/3.png" style="width: 130px">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -94,10 +97,9 @@
             {{-- <div class="psd-line pos-rel" style="position:relative;"> --}}
                 <div class="row flex-column-reverse align-items-center flex-sm-row">
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center p-5 psd-right1">
-                        <p class="m-0 text-center text-sm-right text-light">Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text.<br></p>
+                        <p class="m-0 text-center text-sm-left text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus, facere laudantium voluptatem ducimus corporis aperiam quam nam tenetur! Expedita cumque placeat hic molestias pariatur aspernatur earum autem possimus molestiae.
+                        Iusto possimus excepturi ea! Quia, eligendi blanditiis reprehenderit architecto assumenda voluptatum minus nostrum rerum omnis nobis voluptates provident cupiditate officiis dicta corrupti libero laboriosam qui ipsa, dignissimos quasi. Reprehenderit, necessitatibus!
+                        Cum, tenetur? Temporibus tempora culpa quisquam ea rerum assumenda animi, doloribus veniam reprehenderit ut expedita, provident aliquam porro aspernatur laborum reiciendis, consectetur unde in eos earum vero voluptatum. Odit, iusto?.<br></p>
                     </div>
                     <div class="col-12 col-sm-6 d-flex flex-row justify-content-center align-items-center intro-card-2 p-5">
                         <img class="howto-img" src="assets/img/lady-doctor.png">
@@ -108,17 +110,16 @@
                         <img class="howto-img" src="assets/img/doctor.png">
                     </div>
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center p-5 psd-left2">
-                        <p class="m-0 text-center text-sm-left text-light">Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux Text Faux 
-                            Text Faux Text Faux Text Faux Text Faux Text.<br></p>
+                        <p class="m-0 text-center text-sm-left text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ab ullam rem, exercitationem eius tempora consequatur repellat quidem. Labore suscipit a sequi similique reprehenderit eligendi officiis dolor incidunt maxime tempore?
+                        Dicta aspernatur recusandae maxime cumque odio nobis quisquam fugiat dolorem, ea, deserunt assumenda necessitatibus voluptas doloremque! Laborum voluptatum, asperiores iste omnis doloremque nihil iure, distinctio illum blanditiis quaerat aspernatur ex?
+                        Ducimus nisi sed facilis dicta cumque inventore excepturi molestiae accusamus provident distinctio adipisci minima modi officiis non minus consectetur quos mollitia rerum, doloribus exercitationem unde quasi, harum quisquam quas. Voluptates..<br></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <div class="footer-dark">
-        <footer>
+        <footer id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
@@ -152,6 +153,14 @@
     <script src="{{asset('assets/js/bs-init.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="{{asset('assets/js/Slider-laptop.js')}}"></script>
+    <script>
+        AOS.init();
+      </script>
+      <style>
+          .card:hover{
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+      </style>
 </body>
-
 </html>
+
