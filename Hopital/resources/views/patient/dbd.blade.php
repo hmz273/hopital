@@ -1,6 +1,8 @@
 <x-app-layout>
     <x-slot name="header">
-        <!-- This example requires Tailwind CSS v2.0+ -->
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+        <a href="{{route('patient.rdv')}}">ADD</a>
+      </button>
 <div class="flex flex-col">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -26,18 +28,20 @@
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
+              @isset($patients)
+              @foreach ($patients as $patient)
               <tr>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
-                      <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                      {{$patient->id}}
                     </div>
                     <div class="ml-4">
                       <div class="text-sm font-medium text-gray-900">
-                        Jane Cooper
+                        {{$patient->firstname}}
                       </div>
                       <div class="text-sm text-gray-500">
-                        jane.cooper@example.com
+                        {{$patient->lastname}}
                       </div>
                     </div>
                   </div>
@@ -55,9 +59,14 @@
                   Admin
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                  <a href="{{route('patient.update', $patient->id)}}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="{{route('patient.destroy', $patient->id)}}" class="text-red-600 hover:text-red-900">delete</a>
                 </td>
               </tr>
+              @endforeach
+              @endisset
   
               <!-- More people... -->
             </tbody>
