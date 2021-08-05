@@ -32,7 +32,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#dashboard">Dashboard</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#about">About Us</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#contact">Contact Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#">Sign In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="{{ route('login') }}">Sign In</a></li>
                     </ul>
                 </div>
             </div>
