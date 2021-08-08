@@ -33,10 +33,10 @@ Route::get('admin/delete/{id}', 'App\Http\Controllers\dctController@destroy')->n
 
 //PATIENT
 
-// Route::get('redirects','App\Http\Controllers\HomeController@index');
-Route::resource('patients', 'App\Http\Controllers\ptnController');
-Route::get('patient/rdv/', 'App\Http\Controllers\ptnController@create')->name('patient.rdv');
-Route::post('patient/rdv/', 'App\Http\Controllers\ptnController@store')->name('patient.rdv');
-Route::get('patient/edit/{id}', 'App\Http\Controllers\ptnController@edit')->name('patient.edit');
-Route::post('patient/edit/{id}', 'App\Http\Controllers\ptnController@update')->name('patient.update');
-Route::get('patient/delete/{id}', 'App\Http\Controllers\ptnController@destroy')->name('patient.destroy');
+Route::get('redirects','App\Http\Controllers\HomeController@index');
+Route::resource('rendez_vouses', 'App\Http\Controllers\rdvController');
+Route::get('patient/rdv/', 'App\Http\Controllers\rdvController@create')->name('patient.rdv');
+Route::post('patient/rdv/', 'App\Http\Controllers\rdvController@store')->name('patient.rdv');
+Route::get('patient/edit/{id}', 'App\Http\Controllers\rdvController@edit')->name('rendez_vous.edit');
+Route::post('patient/edit/{id}', 'App\Http\Controllers\rdvController@update')->name('rendez_vous.update');
+Route::get('patient/delete/{id}', 'App\Http\Controller\rdvController@destroy')->name('rendez_vous.destroy');

@@ -18,6 +18,11 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 
+    public function rendez_vouses(){
+        return $this->hasMany('App\Models\rendez_vous');
+    }
+
+
     /**
      * The attributes that are mass assignable.
      *
