@@ -22,7 +22,7 @@ class CreateRendezVousesTable extends Migration
             $table->string('address');
             $table->string('ville');
             $table->string('cin');
-            $table->integer('naissance');
+            $table->string('naissance');
             $table->string('desc');
             $table->unsignedBigInteger('dct_id');
             $table->foreign('dct_id')->references('id')->on('doctors')->onDelete('cascade');

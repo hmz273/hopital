@@ -26,10 +26,10 @@
                 @endforeach
               </div>
 
-              <div class="col-span-6 sm:col-span-3">
+              {{-- <div class="col-span-6 sm:col-span-3">
                 <label for="country" class="block text-sm font-medium text-gray-700">Date</label>
                 <input type="text"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-              </div>
+              </div> --}}
 
               <div class="col-span-6">
                 <label for="street-address" class="block text-sm font-medium text-gray-700">Address</label>
@@ -48,7 +48,7 @@
 
               <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label for="postal-code" class="block text-sm font-medium text-gray-700">Date de naissance</label>
-                <input type="text" name="naissance" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <input type="text" name="naissance"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
               </div>
 
               <div class="col-span-6 sm:col-span-3 lg:col-span-2">

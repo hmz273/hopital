@@ -47,23 +47,26 @@
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-900">{{$rendez_vous->dct_id}}</div>
+                  <div class="text-sm text-gray-900">{{$rendez_vous->cin}}</div>
                   <div class="text-sm text-gray-500">{{$rendez_vous->naissance}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    Active
-                  </span>
+                  <div class="text-sm text-gray-900">{{$rendez_vous->address}}</div>
+                  <div class="text-sm text-gray-500">{{$rendez_vous->ville}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  Admin
+                  <div class="text-sm text-gray-900">{{$rendez_vous->dct_id}}</div>
+                  <div class="text-sm text-gray-500">{{$rendez_vous->desc}}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <div class="text-sm text-gray-900">confirme par ac</div>
+                </td>
+                {{-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <a href="{{route('rendez_vous.update', $rendez_vous->id)}}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <a href="{{route('rendez_vous.destroy', $rendez_vous->id)}}" class="text-red-600 hover:text-red-900">delete</a>
-                </td>
+                </td> --}}
               </tr>
               @endforeach
               @endisset

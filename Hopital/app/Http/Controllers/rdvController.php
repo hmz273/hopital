@@ -19,7 +19,7 @@ class rdvController extends Controller
     {
         $rendez_vouses = rendez_vous::paginate(20);
         return view('patient.dbd',\compact('rendez_vouses'));
-        //
+        
     }
 
     /**

@@ -19,6 +19,9 @@
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Role
                         </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Desc
+                        </th>
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Cancel</span>
                         </th>
@@ -28,33 +31,38 @@
                       </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
+                      @isset($rendez_vouses)
+                      @foreach ($rendez_vouses as $rendez_vous)
                       <tr>
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex items-center">
                             <div class="flex-shrink-0 h-10 w-10">
-                              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                              {{$rendez_vous->id}}
                             </div>
                             <div class="ml-4">
                               <div class="text-sm font-medium text-gray-900">
-                                Jane Cooper
+                                {{$rendez_vous->firstname}}
                               </div>
                               <div class="text-sm text-gray-500">
-                                jane.cooper@example.com
+                                {{$rendez_vous->lastname}}
                               </div>
                             </div>
                           </div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
-                          <div class="text-sm text-gray-500">Optimization</div>
+                          <div class="text-sm text-gray-900">{{$rendez_vous->dct_id}}</div>
+                          <div class="text-sm text-gray-500">specialité</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                          <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                            Active
-                          </span>
+                          <div class="text-sm text-gray-900">{{$rendez_vous->address}}</div>
+                          <div class="text-sm text-gray-500">{{$rendez_vous->ville}}</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          Admin
+                          <div class="text-sm text-gray-900">{{$rendez_vous->cin}}</div>
+                          <div class="text-sm text-gray-500">{{$rendez_vous->naissance}}</div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <div class="text-sm text-gray-900">{{$rendez_vous->desc}}</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a href="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
@@ -63,6 +71,8 @@
                             <a href="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Confirm</a>
                           </td>
                       </tr>
+                      @endforeach
+                      @endisset
           
                       <!-- More people... -->
                     </tbody>

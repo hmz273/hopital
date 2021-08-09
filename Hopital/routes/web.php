@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\rdvController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,6 @@ Route::post('patient/rdv/', 'App\Http\Controllers\rdvController@store')->name('p
 Route::get('patient/edit/{id}', 'App\Http\Controllers\rdvController@edit')->name('rendez_vous.edit');
 Route::post('patient/edit/{id}', 'App\Http\Controllers\rdvController@update')->name('rendez_vous.update');
 Route::get('patient/delete/{id}', 'App\Http\Controller\rdvController@destroy')->name('rendez_vous.destroy');
+
+Route::get('redirects','App\Http\Controllers\HomeController@index');
+Route::resource('rendez_vouses', 'App\Http\Controllers\acController');
