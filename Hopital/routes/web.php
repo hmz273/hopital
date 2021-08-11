@@ -45,3 +45,4 @@ Route::get('patient/delete/{id}', 'App\Http\Controller\rdvController@destroy')->
 //AC
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 Route::resource('rendez_vouses', 'App\Http\Controllers\acController');
+Route::post('patient/edit/{id}', 'App\Http\Controllers\acController@update')->name('confirm.update');

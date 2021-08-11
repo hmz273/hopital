@@ -38,11 +38,11 @@ class ptnController extends Controller
     {
         $request->validate([
             'firstname'=> 'required',
-            'lastname'=> 'required'
+            'lastname'=> 'required',
             'address'=> 'required',
-            'ville'=> 'required'
+            'ville'=> 'required',
             'cin'=> 'required',
-            'naissance'=> 'required'
+            'naissance'=> 'required',
             'description'=> 'required',
         ]);
 
