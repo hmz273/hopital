@@ -50,8 +50,8 @@
                           </div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-900">{{$rendez_vous->dct_id}}</div>
-                          <div class="text-sm text-gray-500">specialité</div>
+                          <div class="text-sm text-gray-900">{{$rendez_vous->fname}}</div>
+                          <div class="text-sm text-gray-500">{{$rendez_vous->spec}}</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="text-sm text-gray-900">{{$rendez_vous->address}}</div>
@@ -64,6 +64,7 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           <div class="text-sm text-gray-900">{{$rendez_vous->desc}}</div>
                         </td>
+                          
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a href="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
                         </td>

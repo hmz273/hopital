@@ -16,7 +16,8 @@ class acController extends Controller
      */
     public function index()
     {
-        $rendez_vouses = rendez_vous::paginate(20);
+        $rendez_vouses = rendez_vous::join('doctors', 'doctors.id', '=', 'rendez_vouses.dct_id')
+        ->get(['doctors.*','rendez_vouses.*']);
         return view('acceuil.dbd',\compact('rendez_vouses'));
     }
 

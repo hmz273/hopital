@@ -24,6 +24,7 @@ class CreateRendezVousesTable extends Migration
             $table->string('cin');
             $table->string('naissance');
             $table->string('desc');
+            $table->integer('status');
             $table->unsignedBigInteger('dct_id');
             $table->foreign('dct_id')->references('id')->on('doctors')->onDelete('cascade');
             $table->unsignedBigInteger('ptn_id');

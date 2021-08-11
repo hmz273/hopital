@@ -3,7 +3,7 @@
   <div class="mt-10 sm:mt-0 ">
   <div class="md:grid md:grid-cols-3 md:gap-6 ">
     <div class="mt-5 md:mt-0 md:col-span-2">
-      <form action="/rendez_vouses" method="POST">
+      <form action="/rendez_vous" method="POST">
         @csrf
         <div class="shadow overflow-hidden sm:rounded-md">
           <div class="px-4 py-5 bg-white sm:p-6">
@@ -60,7 +60,7 @@
                 <label for="postal-code" class="block text-sm font-medium text-gray-700">Doctor</label>
                 <select name="dct_id" class="w-full border bg-white rounded px-3 py-2 outline-none text-gray-700">
                   @foreach ($doctors as $doctor)
-                    <option value="{{$doctor->id}}">{{$doctor->firstname}}</option>
+                    <option value="{{$doctor->id}}">{{$doctor->fname}}</option>
                 @endforeach
               </select>
               </div>

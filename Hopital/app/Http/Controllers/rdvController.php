@@ -6,19 +6,24 @@ use Illuminate\Http\Request;
 use App\Models\rendez_vous;
 use App\Models\doctor;
 use App\Models\user;
+use App\Controllers\DB;
 
 
 class rdvController extends Controller
 {
     /**
+     * 
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $rendez_vouses = rendez_vous::paginate(20);
+        // $rendez_vouses = rendez_vous::whereHas('doctor')->get();
+        $rendez_vouses = rendez_vous::join('doctors', 'doctors.id', '=', 'rendez_vouses.dct_id')
+        ->get(['doctors.*','rendez_vouses.*']);
         return view('patient.dbd',\compact('rendez_vouses'));
+
         
     }
 
@@ -43,7 +48,7 @@ class rdvController extends Controller
     public function store(Request $request)
     {
         rendez_vous::create($request->all());
-        return redirect('/rendez_vouses');
+        return redirect('/rendez_vous');
     }
 
     /**

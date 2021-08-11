@@ -36,14 +36,18 @@ class dctController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'firstname'=> 'required',
-            'lastname'=> 'required'
+            'fname'=> 'required',
+            'lname'=> 'required',
+            'spec'=> 'required',
+            'telephone'=> 'required',
         ]);
 
 
         $doctor = new doctor;
-        $doctor->firstname = $request->firstname;
-        $doctor->lastname = $request->lastname;
+        $doctor->fname = $request->fname;
+        $doctor->lname = $request->lname;
+        $doctor->spec = $request->spec;
+        $doctor->telephone = $request->telephone;
 
         $doctor->save();
         return redirect('/doctors');
@@ -87,11 +91,17 @@ class dctController extends Controller
         //     'firstname'=>$request->firstname,
         //     'lastname'=>$request->lastname
         // ]);
-        if ($request->firstname){
-            $doctor->firstname = $request->firstname;
+        if ($request->ftname){
+            $doctor->ftname = $request->ftname;
         }
-        if ($request->lastname){
-            $doctor->lastname = $request->lastname;
+        if ($request->lname){
+            $doctor->lname = $request->lname;
+        }
+        if ($request->spec){
+            $doctor->spec = $request->spec;
+        }
+        if ($request->telephone){
+            $doctor->telephone = $request->telephone;
         }
         
         $doctor->save();
