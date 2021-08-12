@@ -59,11 +59,11 @@
                   <div class="text-sm text-gray-500">{{$rendez_vous->desc}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  <div class="text-sm text-gray-900">confirme par ac</div>
+                  <div class="text-sm text-gray-900">{{$rendez_vous->status}}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  <div class="text-sm text-gray-900">not confirme par ac</div>
-                </td>
+                {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <div class="text-sm text-gray-900">{{$rendez_vous->status}}</div>
+                </td> --}}
                 {{-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                   <a href="{{route('rendez_vous.update', $rendez_vous->id)}}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                 </td>

@@ -22,10 +22,10 @@
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
 </head>
 
-<body>
+<body class="justify-content-center">
     <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm p-3 mb-5 rounded navigation-clean-button" style="height:80px;background-color:#18454D;color:#ffffff;">
-            <div class="container-fluid"><a class="navbar-brand" href="/">HMS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm p-3 mb-5 rounded navigation-clean-button" style="height:80px;background-color:#ECFCFF;color:#ffffff;">
+            <div class="container-fluid"><a class="navbar-brand text-dark" href="/">HMS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
@@ -97,7 +97,7 @@
             {{-- <div class="psd-line pos-rel" style="position:relative;"> --}}
                 <div class="row flex-column-reverse align-items-center flex-sm-row">
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center p-5 psd-right1">
-                        <p class="m-0 text-center text-sm-left text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus, facere laudantium voluptatem ducimus corporis aperiam quam nam tenetur! Expedita cumque placeat hic molestias pariatur aspernatur earum autem possimus molestiae.
+                        <p class="m-0 text-center text-sm-left text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus, facere laudantium voluptatem ducimus corporis aperiam quam nam tenetur! Expedita cumque placeat hic molestias pariatur aspernatur earum autem possimus molestiae.
                         Iusto possimus excepturi ea! Quia, eligendi blanditiis reprehenderit architecto assumenda voluptatum minus nostrum rerum omnis nobis voluptates provident cupiditate officiis dicta corrupti libero laboriosam qui ipsa, dignissimos quasi. Reprehenderit, necessitatibus!
                         Cum, tenetur? Temporibus tempora culpa quisquam ea rerum assumenda animi, doloribus veniam reprehenderit ut expedita, provident aliquam porro aspernatur laborum reiciendis, consectetur unde in eos earum vero voluptatum. Odit, iusto?.<br></p>
                     </div>
@@ -110,7 +110,7 @@
                         <img class="howto-img" src="assets/img/doctor.png">
                     </div>
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center p-5 psd-left2">
-                        <p class="m-0 text-center text-sm-left text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ab ullam rem, exercitationem eius tempora consequatur repellat quidem. Labore suscipit a sequi similique reprehenderit eligendi officiis dolor incidunt maxime tempore?
+                        <p class="m-0 text-center text-sm-left text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ab ullam rem, exercitationem eius tempora consequatur repellat quidem. Labore suscipit a sequi similique reprehenderit eligendi officiis dolor incidunt maxime tempore?
                         Dicta aspernatur recusandae maxime cumque odio nobis quisquam fugiat dolorem, ea, deserunt assumenda necessitatibus voluptas doloremque! Laborum voluptatum, asperiores iste omnis doloremque nihil iure, distinctio illum blanditiis quaerat aspernatur ex?
                         Ducimus nisi sed facilis dicta cumque inventore excepturi molestiae accusamus provident distinctio adipisci minima modi officiis non minus consectetur quos mollitia rerum, doloribus exercitationem unde quasi, harum quisquam quas. Voluptates..<br></p>
                     </div>

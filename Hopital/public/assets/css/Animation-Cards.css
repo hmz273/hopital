@@ -1,6 +1,6 @@
 .card-header {
   height: 200px;
-  background-color: #18454D;
+  background-color: #ECFCFF;
 }
 
 #download-icon {
@@ -19,12 +19,12 @@
 }
 
 .card-text.sub-text-color {
-  color: white;
+  color: rgb(41, 41, 41);
 }
 
 .card-text:last-child {
   font-size: 20px;
-  color: white;
+  color: rgb(34, 34, 34);
 }
 
 #cardheader-subtext {
@@ -59,7 +59,7 @@
 }
 
 .card-body{
-  background-color: #18454D;
+  background-color: #ECFCFF;
 }
 
 .flx{

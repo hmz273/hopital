@@ -86,4 +86,16 @@ class acController extends Controller
     {
         //
     }
+
+    public function confirm($id)
+    {
+        $confirm = rendez_vous::where('id','=',$id)->update(['status'=>'confirmed']);
+        return back(); 
+    }
+
+    public function canceld($id)
+    {
+        $confirm = rendez_vous::where('id','=',$id)->update(['status'=>'canceld']);
+        return back(); 
+    }
 }
