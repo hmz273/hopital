@@ -11,6 +11,16 @@ class dctController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function dash()
+    {
+        $doctors = doctor::paginate(20);
+        // $rendez_vouses = rendez_vous::join('doctors', 'doctors.id', '=', 'rendez_vouses.dct_id')
+        // ->get(['doctors.*','rendez_vouses.*']);
+        return view('admin.dash',\compact('doctors'));
+    }
+
+
     public function index()
     {
         $doctors = doctor::paginate(20);

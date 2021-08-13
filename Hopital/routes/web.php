@@ -27,7 +27,8 @@ Route::resource('doctors', 'App\Http\Controllers\dctController');
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 Route::get('admin/add/', 'App\Http\Controllers\dctController@create')->name('admin.add');
-Route::post('admin/add/', 'App\Http\Controllers\dctController@store')->name('admin.add');
+Route::post('admin/add/', 'App\Http\Controllers\dctController@store')->name('admin.add');Route::get('admin/add/', 'App\Http\Controllers\dctController@create')->name('admin.add');
+Route::get('admin/', 'App\Http\Controllers\dctController@dash');
 Route::get('admin/edit/{id}', 'App\Http\Controllers\dctController@edit')->name('admin.edit');
 Route::post('admin/edit/{id}', 'App\Http\Controllers\dctController@update')->name('admin.update');
 Route::get('admin/delete/{id}', 'App\Http\Controllers\dctController@destroy')->name('admin.destroy');
