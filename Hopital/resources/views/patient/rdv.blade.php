@@ -19,11 +19,13 @@
               </div>
 
               <div class="col-span-6 sm:col-span-4">
-                <label for="email-address" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="text" name="ptn_id"  id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                @foreach ($users as $user)
-                    <p value="{{$user->id}}">{{$user->firstname}}</p>
-                @endforeach
+                {{-- <label  class="block text-sm font-medium text-gray-700">Email</label> --}}
+                <input type="number" value ="{{auth()->id()}}" name="ptn_id" hidden>
+                {{-- @foreach ($users as $user) --}}
+                {{-- <input type="number" value ="{{auth()->id()}}" name="user_id" hidden > --}}
+                    {{-- <p value="{{$user->id}}">{{$user->firstname}}</p> --}}
+                    {{-- {{auth()->id()}} --}}
+                {{-- @endforeach --}}
               </div>
 
               {{-- <div class="col-span-6 sm:col-span-3">

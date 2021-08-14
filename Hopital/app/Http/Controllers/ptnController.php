@@ -50,6 +50,13 @@ class ptnController extends Controller
         $patient = new patient;
         $patient->firstname = $request->firstname;
         $patient->lastname = $request->lastname;
+        $patient->address = $request->address;
+        $patient->ville = $request->ville;
+        $patient->cin = $request->cin;
+        $patient->naissance = $request->naissance;
+        $patient->description = $request->description;
+
+        $patient->ptn_id = auth()->id();
 
         $patient->save();
         return redirect('/patients');

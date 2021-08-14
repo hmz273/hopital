@@ -66,10 +66,10 @@
                         </td>
                           
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a href="{{route('acceuil.cfr' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
+                          <a href="{{route('acceuil.cld' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                            <a href="{{route('acceuil.cld' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Confirm</a>
+                            <a href="{{route('acceuil.cfr' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Confirm</a>
                           </td>
                       </tr>
                       @endforeach

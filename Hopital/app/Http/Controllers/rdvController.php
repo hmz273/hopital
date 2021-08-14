@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\rendez_vous;
 use App\Models\doctor;
@@ -19,13 +19,21 @@ class rdvController extends Controller
      */
     public function index()
     {
+        // $user = auth()->id;
+        $user=Auth::user()->id;
         // $rendez_vouses = rendez_vous::whereHas('doctor')->get();
         $rendez_vouses = rendez_vous::join('doctors', 'doctors.id', '=', 'rendez_vouses.dct_id')
+        ->where('ptn_id', '=', $user)
         ->get(['doctors.*','rendez_vouses.*']);
-        return view('patient.dbd',\compact('rendez_vouses'));
-
-        
+        return view('patient.dbd',\compact('rendez_vouses')); 
+        // return view('doctor.dbd',\compact('rendez_vouses')); 
     }
+
+    // public function dctr()
+    // {
+    //     $doctors = doctor::paginate(20);
+    //     return view('admin.dbd',\compact('doctors'));
+    // }
 
     /**
      * Show the form for creating a new resource.

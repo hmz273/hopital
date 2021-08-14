@@ -23,11 +23,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+//ADMIN
+
 Route::resource('doctors', 'App\Http\Controllers\dctController');
 
 Route::get('redirects','App\Http\Controllers\HomeController@index');
 Route::get('admin/add/', 'App\Http\Controllers\dctController@create')->name('admin.add');
-Route::post('admin/add/', 'App\Http\Controllers\dctController@store')->name('admin.add');Route::get('admin/add/', 'App\Http\Controllers\dctController@create')->name('admin.add');
+Route::post('admin/add/', 'App\Http\Controllers\dctController@store')->name('admin.add');
+// Route::get('admin/add/', 'App\Http\Controllers\dctController@create')->name('admin.add');
 Route::get('admin/', 'App\Http\Controllers\dctController@dash');
 Route::get('admin/edit/{id}', 'App\Http\Controllers\dctController@edit')->name('admin.edit');
 Route::post('admin/edit/{id}', 'App\Http\Controllers\dctController@update')->name('admin.update');
@@ -49,3 +52,7 @@ Route::resource('rendez_vouses', 'App\Http\Controllers\acController');
 Route::get('acceuil.cfr/{id}', 'App\Http\Controllers\acController@confirm')->name('acceuil.cfr');
 Route::get('acceuil.cld/{id}', 'App\Http\Controllers\acController@canceld')->name('acceuil.cld');
 Route::post('patient/edit/{id}', 'App\Http\Controllers\acController@update')->name('confirm.update');
+
+
+//DOCTOR
+Route::get('redirectss','App\Http\Controllers\rdvcfrController@index');

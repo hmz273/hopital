@@ -29,10 +29,10 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#dashboard">Dashboard</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#about">About Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#contact">Contact Us</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="{{ route('register') }}">Sign In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#dashboard">Dashboard</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#about">About Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#contact">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="{{ route('register') }}">Sign In</a></li>
                     </ul>
                 </div>
             </div>

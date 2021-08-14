@@ -11,16 +11,19 @@
                     <thead class="bg-gray-50">
                       <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Name
+                          ID
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Title
+                          Firstname
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Status
+                          Lastname
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Role
+                          CIN
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Specialité
                         </th>
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Edit</span>
@@ -32,6 +35,15 @@
                       @foreach ($doctors as $doctor)
                       <tr>
                         <td class="px-6 py-4 whitespace-nowrap">
+                          {{$doctor->id}}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          {{$doctor->fname}}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          {{$doctor->lname}}
+                        </td>
+                        {{-- <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex items-center">
                             <div class="flex-shrink-0 h-10 w-10">
                               {{$doctor->id}}
@@ -45,17 +57,15 @@
                               </div>
                             </div>
                           </div>
-                        </td>
+                        </td> --}}
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="text-sm text-gray-900">{{$doctor->telephone}}</div>
-                          <div class="text-sm text-gray-500">{{$doctor->spec}}</div>
+                          {{-- <div class="text-sm text-gray-500"></div> --}}
                         </td>
-                        {{-- <td class="px-6 py-4 whitespace-nowrap">
-                          <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                            Active
-                          </span>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          {{$doctor->spec}}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           Admin
                         </td> --}}
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
