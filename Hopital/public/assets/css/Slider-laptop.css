@@ -49,7 +49,7 @@
 
 .x_001_laptop_main_wrap > .row > div > a {
   color: #989898;
-  background-color: #00B8D9;
+  background-color: #FF30FF;
   font-size: 12px;
   font-weight: 400;
   padding: 12px 30px;
@@ -63,8 +63,8 @@
 
 .x_001_laptop_main_wrap > .row > div > a:hover {
   color: #ffffff;
-  background: #0288a0;
-  border: 1px solid #0288a0;
+  background: #ff7bff;
+  border: 1px solid #ff7bff;
 }
 
 /* ---------- LAPTOP ---------- */

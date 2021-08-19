@@ -29,7 +29,7 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#dashboard">Dashboard</a></li>
+                        {{-- <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#dashboard">Dashboard</a></li> --}}
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#about">About Us</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="#contact">Contact Us</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" style="color:#127c62;" href="{{ route('register') }}">Sign In</a></li>
@@ -54,7 +54,7 @@
                     It manages the smooth healthcare performance along with administrative, medical, 
                     legal and financial control.
                 </p>
-                <a class="text-light" href="#">read more</a>
+                <a class="text-white" href="#">read more</a>
             </div>
         </div>
     </div>
