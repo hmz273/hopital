@@ -44,8 +44,5 @@
                 </x-jet-button>
             </div>
         </form>
-        <div class="w-1/2 shadow-2xl">
-            <img class="object-cover w-full h-screen hidden md:block" src="https://source.unsplash.com/IXUM4cJynP0">
-        </div>
     </x-jet-authentication-card>
 </x-guest-layout>

@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\rdvController;
+use App\Http\Controllers\ctcController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,10 @@ Route::resource('rendez_vouses', 'App\Http\Controllers\acController');
 Route::get('acceuil.cfr/{id}', 'App\Http\Controllers\acController@confirm')->name('acceuil.cfr');
 Route::get('acceuil.cld/{id}', 'App\Http\Controllers\acController@canceld')->name('acceuil.cld');
 Route::post('patient/edit/{id}', 'App\Http\Controllers\acController@update')->name('confirm.update');
+
+
+//contact
+// Route::get('contact', 'App\Http\Controllers\ctcController@index');
 
 
 //DOCTOR
