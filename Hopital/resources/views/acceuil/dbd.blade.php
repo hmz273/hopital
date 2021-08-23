@@ -78,9 +78,9 @@
                             <a  href="{{route('acceuil.cfr' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Confirm</a>
                         </td>
                         @endif
-                        <td id="confirm" class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        {{-- <td id="confirm" class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a  href="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Contact</a>
-                      </td>
+                      </td> --}}
                       </tr>
                       @endforeach
                       @endisset
