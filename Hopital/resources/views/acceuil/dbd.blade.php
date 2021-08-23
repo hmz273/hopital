@@ -22,6 +22,9 @@
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Desc
                         </th>
+                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Desc
+                        </th>
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Cancel</span>
                         </th>
@@ -64,13 +67,17 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           <div class="text-sm text-gray-900">{{$rendez_vous->desc}}</div>
                         </td>
-                          
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          <div class="text-sm text-gray-900">{{$rendez_vous->status}}</div>
+                        </td>
+                          @if($rendez_vous->status !== "confirmed")
                         <td id="cld" class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a onclick="document.getElementById('cld').style.visibility='hidden'" href="{{route('acceuil.cld' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
+                          <a  href="{{route('acceuil.cld' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Cancel</a>
                         </td>
                         <td id="confirm" class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <a  href="{{route('acceuil.cfr' , $rendez_vous->id)}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Confirm</a>
                         </td>
+                        @endif
                         <td id="confirm" class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a  href="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Contact</a>
                       </td>
